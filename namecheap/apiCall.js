@@ -19,7 +19,8 @@
             throw new Error("requestParams must be an object.");    
         }
 
-        var requestUrl = "https://api.namecheap.com/xml.response?",
+        // var requestUrl = "https://api.namecheap.com/xml.response?",
+        var requestUrl = "https://api.sandbox.namecheap.com/xml.response?",
             providedConfig = config.getAll(),
             requestPayload = {};
         if (!config.isSatisfied()) {
