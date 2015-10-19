@@ -41,9 +41,19 @@
         });
     }
     
+    function getUrl() {
+        return config.url || "https://api.namecheap.com/xml.response?";
+    }
+    
+    function setUrl(url) {
+        config.url = url;
+    }
+    
     module.exports = {
         set: set,
         get: get,
+        setUrl: setUrl,
+        getUrl: getUrl,
         getAll: getAll,
         isSatisfied: isSatisfied
     };
