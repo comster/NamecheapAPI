@@ -26,6 +26,10 @@ To set the Namecheap global parameters, do the following. Remember to set all yo
 var namecheapApi = require('namecheap-api');
 
 namecheapApi.config.set("ApiUser", "YourUsernameHere");
+
+// Optionally set the API URL for testing in the sandbox
+
+namecheapApi.config.setUrl("https://api.sandbox.namecheap.com/xml.response?");
 ```
 
 ## Response and the Response Structure
